@@ -137,13 +137,14 @@ form.addEventListener('submit', async (e) => {
     await submitToServer({ firstName, lastName, email, state });
 
     statusEl.textContent = 'Saved! (See details below.)';
-
-    // 3) Clear fields
-    form.reset();
-    document.getElementById('firstName').focus();
   } catch (err) {
     statusEl.textContent = err.message || 'Something went wrong.';
   } finally {
+    // Always clear the form fields regardless of success or failure
+    try {
+      form.reset();
+      document.getElementById('firstName').focus();
+    } catch (_) {}
     submitBtn.disabled = false;
   }
 });
