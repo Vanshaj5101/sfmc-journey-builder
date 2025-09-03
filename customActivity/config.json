@@ -1,0 +1,35 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+      "icon": "images/icon.png",
+      "category": "message",
+      "isConfigured": false
+    },
+    "type": "REST",
+    "lang": {
+      "en-US": {
+        "name": "Learner Form Activity",
+        "description": "Collects first name, last name, Gmail, and U.S. state."
+      }
+    },
+    "arguments": {
+      "execute": {
+        "inArguments": [],
+        "outArguments": [],
+        "url": "https://YOUR-SERVER-ENDPOINT/execute",
+        "verb": "POST",
+        "format": "json",
+        "useJwt": false
+      }
+    },
+    "configurationArguments": {
+      "save":    { "url": "https://YOUR-SERVER-ENDPOINT/save", "verb": "POST" },
+      "publish": { "url": "https://YOUR-SERVER-ENDPOINT/publish", "verb": "POST" },
+      "validate":{ "url": "https://YOUR-SERVER-ENDPOINT/validate", "verb": "POST" },
+      "stop":    { "url": "https://YOUR-SERVER-ENDPOINT/stop", "verb": "POST" }
+    },
+    "wizardSteps": [
+      { "label": "User Form", "key": "step1" }
+    ]
+  }
+  
