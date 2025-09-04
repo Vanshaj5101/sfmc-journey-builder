@@ -16,7 +16,7 @@
     "execute": {
       "inArguments": [],
       "outArguments": [],
-      "url": "https://your-vercel-app.vercel.app/api/execute",
+      "url": "https://sfmc-journey-builder.vercel.app/api/execute",
       "verb": "POST",
       "body": "{}",
       "header": "",
@@ -27,29 +27,29 @@
   "configurationArguments": {
     "applicationExtensionKey": "sample-form-activity",
     "save": {
-      "url": "https://your-vercel-app.vercel.app/api/save"
+      "url": "https://sfmc-journey-builder.vercel.app/api/save"
     },
     "publish": {
-      "url": "https://your-vercel-app.vercel.app/api/publish"
+      "url": "https://sfmc-journey-builder.vercel.app/api/publish"
     },
     "validate": {
-      "url": "https://your-vercel-app.vercel.app/api/validate"
+      "url": "https://sfmc-journey-builder.vercel.app/api/validate"
     },
     "stop": {
-      "url": "https://your-vercel-app.vercel.app/api/stop"
+      "url": "https://sfmc-journey-builder.vercel.app/api/stop"
     }
   },
   "userInterfaces": {
     "configModal": {
       "height": 400,
       "width": 400,
-      "url": "https://your-vercel-app.vercel.app/index.html"
+      "url": "https://sfmc-journey-builder.vercel.app/index.html"
     },
     "runningModal": {
-      "url": "https://your-vercel-app.vercel.app/index.html"
+      "url": "https://sfmc-journey-builder.vercel.app/index.html"
     },
     "runningHover": {
-      "url": "https://your-vercel-app.vercel.app/index.html"
+      "url": "https://sfmc-journey-builder.vercel.app/index.html"
     }
   },
   "schema": {

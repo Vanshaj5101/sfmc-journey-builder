@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "rewrites": [
+      { "source": "/save", "destination": "/api/save" },
+      { "source": "/publish", "destination": "/api/publish" },
+      { "source": "/validate", "destination": "/api/validate" },
+      { "source": "/execute", "destination": "/api/execute" },
+      { "source": "/stop", "destination": "/api/stop" }
+    ]
+  }
+  
