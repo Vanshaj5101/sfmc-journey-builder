@@ -1,0 +1,34 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "images/icon.png",
+    "category": "message",
+    "isConfigured": false
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Learner Form Activity",
+      "description": "Collects first name, last name, Gmail, and U.S. state."
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://YOUR-APP.vercel.app/api/execute",
+      "verb": "POST",
+      "format": "json",
+      "useJwt": false
+    }
+  },
+  "configurationArguments": {
+    "save":    { "url": "https://YOUR-APP.vercel.app/api/save",    "verb": "POST" },
+    "publish": { "url": "https://YOUR-APP.vercel.app/api/publish", "verb": "POST" },
+    "validate":{ "url": "https://YOUR-APP.vercel.app/api/validate","verb": "POST" },
+    "stop":    { "url": "https://YOUR-APP.vercel.app/api/stop",    "verb": "POST" }
+  },
+  "wizardSteps": [
+    { "label": "User Form", "key": "step1" }
+  ]
+}
