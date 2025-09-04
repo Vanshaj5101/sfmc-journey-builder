@@ -1,0 +1,58 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "https://via.placeholder.com/50",
+    "iconSmall": "https://via.placeholder.com/25",
+    "category": "customer"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Sample Form Activity",
+      "description": "A simple form inside Journey Builder for demo."
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://your-vercel-app.vercel.app/api/execute",
+      "verb": "POST",
+      "body": "{}",
+      "header": "",
+      "format": "json",
+      "useJwt": false
+    }
+  },
+  "configurationArguments": {
+    "applicationExtensionKey": "sample-form-activity",
+    "save": {
+      "url": "https://your-vercel-app.vercel.app/api/save"
+    },
+    "publish": {
+      "url": "https://your-vercel-app.vercel.app/api/publish"
+    },
+    "validate": {
+      "url": "https://your-vercel-app.vercel.app/api/validate"
+    },
+    "stop": {
+      "url": "https://your-vercel-app.vercel.app/api/stop"
+    }
+  },
+  "userInterfaces": {
+    "configModal": {
+      "height": 400,
+      "width": 400,
+      "url": "https://your-vercel-app.vercel.app/index.html"
+    },
+    "runningModal": {
+      "url": "https://your-vercel-app.vercel.app/index.html"
+    },
+    "runningHover": {
+      "url": "https://your-vercel-app.vercel.app/index.html"
+    }
+  },
+  "schema": {
+    "arguments": {}
+  }
+}
